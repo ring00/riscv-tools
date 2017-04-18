@@ -24,6 +24,13 @@ function build_project {
     echo "Removing existing $PROJECT/build directory"
     rm -rf "$PROJECT/build"
   fi
+  if [ ! -e "$PROJECT/configure" ]
+  then
+    (
+      cd "$PROJECT"
+      autoreconf -i
+    )
+  fi
   mkdir -p "$PROJECT/build"
   cd "$PROJECT/build"
   echo "Configuring project $PROJECT"
