@@ -37,6 +37,10 @@ before_install:
   - cd riscv-tests
   - git submodule update --init
   - cd ..
+  # openocd also needs submodules
+  - cd riscv-openocd
+  - git submodule update --init
+  - cd ..
   # actually use new gcc
   - export CXX=g++-4.8 CC=gcc-4.8
 

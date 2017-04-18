@@ -27,6 +27,7 @@ function build_project {
   if [ ! -e "$PROJECT/configure" ]
   then
     (
+      echo "Autoconf project $PROJECT"
       cd "$PROJECT"
       autoreconf -i
     )
