@@ -30,7 +30,7 @@ function build_project {
     (
       echo "Autoconf project $PROJECT"
       cd "$PROJECT"
-      autoreconf -i
+      autoconf -i
     )
   fi
   mkdir -p "$PROJECT/build"
