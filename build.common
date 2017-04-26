@@ -24,6 +24,7 @@ function build_project {
     echo "Removing existing $PROJECT/build directory"
     rm -rf "$PROJECT/build"
   fi
+  find $PROJECT
   if [ ! -e "$PROJECT/configure" ]
   then
     (
