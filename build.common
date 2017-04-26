@@ -30,7 +30,8 @@ function build_project {
     (
       echo "Autoconf project $PROJECT"
       cd "$PROJECT"
-      autoconf -i
+      mkdir -p m4
+      autoreconf -i
     )
   fi
   mkdir -p "$PROJECT/build"
