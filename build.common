@@ -30,7 +30,7 @@ function build_project {
     (
       echo "Autoconf project $PROJECT"
       cd "$PROJECT"
-      find . -type d | sed 's@$@m4' | xargs mkdir -p m4
+      find . -type d | sed 's@$@m4@' | xargs mkdir -p m4
       autoreconf -i
     )
   fi
