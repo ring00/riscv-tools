@@ -23,6 +23,7 @@ addons:
       - flex
       - texinfo
       - python-pexpect
+      - libusb-1.0-0-dev
 
 env:
   global:
