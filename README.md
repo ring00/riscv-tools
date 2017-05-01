@@ -1,4 +1,4 @@
-# riscv-tools [![Build Status](https://travis-ci.org/ring00/riscv-tools.svg?branch=master)](https://travis-ci.org/ring00/riscv-tools))
+# riscv-tools [![Build Status](https://travis-ci.org/ring00/riscv-tools.svg?branch=master)](https://travis-ci.org/ring00/riscv-tools)
 
 This guide explains how to install [riscv-tools](https://github.com/ring00/riscv-tools.git) on Ubuntu. These instructions might also work on other Linux variants, but we have only tested (and we only support) these instructions on Ubuntu 14.04 or higher.
 
